@@ -1,0 +1,38 @@
+
+// brand
+if (programPref.includes('Cal Poly')) brand = 'CPU'
+else if (programPref.includes('UNF')) brand = 'UNF'
+else if (programPref.includes('USD')) brand = 'USD'
+else if (programPref.includes('LSU')) brand = 'LSU'
+else if (programPref.includes('CIT')) brand = 'CIT'
+else if (programPref.includes('OKU')) brand = 'OKU'
+else if (programPref.includes('VPI')) brand = 'VPI'
+else if (programPref.includes('ECE')) brand = 'ECE'
+else if (programPref.includes('UIC')) brand = 'UIC'
+else if (programPref.includes('SJS')) brand = 'SJS'
+else if (programPref.includes('CSU')) brand = 'CSU'
+else if (programPref.includes('CSE')) brand = 'CSE'
+else if (programPref.includes('CLE')) brand = 'CLE'
+else if (programPref.includes('UTD')) brand = 'UTD'
+else if (programPref.includes('OSU')) brand = 'OSU'
+else if (programPref.includes('UNM')) brand = 'UNM'
+else if (programPref.includes('USU')) brand = 'USU'
+
+// location
+if (programPref.includes('Remote') || programPref.includes('Online')) location = 'RM'
+else if (programPref.includes('Hybrid')) location = 'HY'
+else {
+  if (brand === 'CPU') location = 'CA'
+  else if (brand === 'UNF') location = 'FL'
+  else if (brand === 'USD') location = 'SD'
+  else if (brand === 'LSU') location = 'LA'
+  else if (brand === 'CIT') location = 'CA'
+  else if (brand === 'OKU') location = 'OK'
+  else if (brand === 'VPI') location = 'VA'
+  else if (brand === 'ECE') location = 'GA'
+  else if (brand === 'UIC') location = 'CH'
+  else if (brand === 'SJS') location = 'CA'
+  else if (brand === 'CSU') location = 'CO'
+  else if (brand === 'CSE') location = 'CA'
+  else if (brand === 'UTD') location = 'TX'
+}

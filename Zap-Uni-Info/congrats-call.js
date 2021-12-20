@@ -1,0 +1,17 @@
+
+if(lastSubmittedForm.includes('/caltech-')) brand = 'CIT'
+else if(lastSubmittedForm.includes('/cal-poly-')) brand = 'CPU'
+else if(lastSubmittedForm.includes('/emory-')) brand = 'ECE'
+else if(lastSubmittedForm.includes('/lsu-')) brand = 'LSU'
+else if(lastSubmittedForm.includes('/oku-')) brand = 'OKU'
+else if(lastSubmittedForm.includes('/uic-')) brand = 'UIC'
+else if(lastSubmittedForm.includes('/unf-')) brand = 'UNF'
+else if(lastSubmittedForm.includes('/usd-')) brand = 'USD'
+else if(lastSubmittedForm.includes('/vt-')) brand = 'VPI'
+else if(lastSubmittedForm.includes('/sjsu-')) brand = 'SJS'
+else if(lastSubmittedForm.includes('/csu-')) brand = 'CSU'
+else if(lastSubmittedForm.includes('/cse-')) brand = 'CSE'
+else if(lastSubmittedForm.includes('/cle-')) brand = 'CLE'
+else if(lastSubmittedForm.includes('/utd-')) brand = 'UTD'
+else if(lastSubmittedForm.includes('/unm-')) brand = 'UNM'
+else throw new Error('Could not determine UNIV brand from submitted form')
